@@ -1,0 +1,98 @@
+/* Sed labore Area */
+.sed_labore_area{
+    padding-top: 47px;
+    .sed_labore_row{ 
+        .sed_labore{
+            padding-right: 15px;
+            margin-left: -5px; 
+            padding-bottom: 10px; 
+            .sed_labore_content{
+                padding: 25px;
+                .tn_tittle{
+                    font-size: 20px; 
+                    text-transform: inherit;
+                }
+                h5{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// sed_labore_big  
+.sed_labore_big{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;  
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;   
+        background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.6));
+    }
+    img{
+        max-width: 100%;
+        transition: all 0.6s linear;
+    } 
+    .sed_labore_content{
+        position: absolute; 
+        left: 0;
+        right: 0;
+        z-index: 3;
+        bottom: 0;
+        text-align: center;
+        padding: 60px;
+        padding-bottom: 40px;
+        h5{
+            font: 16px $fan;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .tn_tittle{
+            font: 700 24px/30px $qua;
+            color: #fff;
+            text-transform: uppercase;
+            padding-top: 10px;
+            display: block;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            padding-top: 8px;
+            li{
+                list-style: none;
+                display: inline-block;
+                font-size: 12px;
+                color: #fff;
+                text-transform: uppercase;
+                padding-right: 20px;
+                i{
+                    font-size: 13px;
+                    padding-right: 10px;
+                }
+                a{
+                   color: #fff; 
+                }
+            }
+        }
+        p{
+            color: #fff;
+            font: 400 16px/26px $fan;
+            padding-top: 10px;
+        }
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+.sed_tow_labore{
+	padding-bottom: 40px;
+
+}
+/* End Sed labore Area */

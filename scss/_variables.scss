@@ -1,0 +1,65 @@
+// Variables
+
+//Fonts  
+$fan: 'Roboto', sans-serif;
+$qua: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+/*Color Variables*/  
+$bc: #f1f1f1;
+$h2: #222222;
+$p: #666666;  
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins 
+@mixin placeholder {
+    &.placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-webkit-input-placeholder { @content }
+} 
+
+/* Button */ 
+
+/* Section Title*/
+.tittle{ 
+    h2{
+        font: 700 30px $qua;
+        color: $h2;
+        text-align: center; 
+    }
+}
+.tittle_tow{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        background: #e0e0e0;
+        bottom: 6px;
+        width: 100%;
+        z-index: -1;
+        height: 1px;
+        display: block;
+    }
+    h2{
+        font: 700 24px $qua;
+        color: $h2; 
+        display: inline-block;
+        padding-right: 20px;
+        background: #fff;
+    }
+}
+.tittle_middle{
+    padding-top: 0;
+    text-transform: uppercase;
+	h2{
+		font-size: 20px !important;
+	}
+}

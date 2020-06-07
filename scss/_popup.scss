@@ -1,0 +1,124 @@
+/* popup_area Area */ 
+.portfolio_popup{
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    .popup_row{
+        background: #fff;
+//        new css
+        .pop_img{
+            height: 500px;
+            overflow: hidden;
+        }
+//        new css
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+        .popup_content{
+            padding: 80px;
+            h2{
+                font: 400 24px/1 $qua;
+                color: $h2;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            p{
+                font: 400 16px/26px $fan;
+                color: $p;
+                padding-top: 26px;
+            }
+            a{
+                font: 400 16px/50px $fan;
+                color: $h2;
+                display: inline-block;
+                width: 140px;
+                text-align: center;
+                text-transform: uppercase;
+                border: 1px solid #e0e0e0;
+                margin-right: 10px;
+                margin-top: 30px;
+                &:hover,&:focus{
+                    color: #fff;
+                    background: $h2;
+                }
+                &.prev{
+                    i{
+                        padding-right: 20px;
+                    }
+                }
+                &.next{
+                    i{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    button{
+        border: 2px solid #fff;
+        color: #fff !important;
+        border-radius: 50%;
+        top: 30px;
+        right: 30px;
+        &:hover,&:focus{
+            top: 30px;
+        }
+    }
+} 
+/* End popup_area Area */ 
+
+/*   at start */
+  .my-mfp-slide-bottom .zoom-anim-dialog {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    -o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+  }
+
+  /* animate in */
+  .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+    -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+    -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+    -o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+    transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  }
+
+  /* animate out */
+  .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+    opacity: 0;
+
+    -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+    -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+    -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+    -o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+    transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  }
+
+  /* Dark overlay, start state */
+  .my-mfp-slide-bottom.mfp-bg {
+    opacity: 0;
+
+    -webkit-transition: opacity 0.3s ease-out; 
+    -moz-transition: opacity 0.3s ease-out; 
+    -o-transition: opacity 0.3s ease-out; 
+    transition: opacity 0.3s ease-out;
+  }
+  /* animate in */
+  .my-mfp-slide-bottom.mfp-ready.mfp-bg {
+    opacity:0.451;
+  }
+  /* animate out */
+  .my-mfp-slide-bottom.mfp-removing.mfp-bg {
+    opacity: 0;
+  } 

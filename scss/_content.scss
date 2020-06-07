@@ -1,0 +1,146 @@
+/* Single Content Area */
+.single_content_area{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    .content_row{
+        .socail_share{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                padding-bottom: 10px;
+                &:last-child{
+                    a{
+                        color: #55acee;
+                        &:hover, &:focus{
+                            color: #fff;
+                            background: #55acee;
+                        }
+                    } 
+                }
+                &:nth-child(2){
+                    a{
+                        color: #cb2027;
+                        &:hover, &:focus{
+                            color: #fff;
+                            background: #cb2027;
+                        }
+                    }
+                }
+                a{
+                    color: #3b5998;
+                    border: 1px solid #e0e0e0;
+                    font-size: 20px; 
+                    width: 58px;
+                    line-height: 58px;
+                    display: block;
+                    text-align: center;
+                    &:hover, &:focus{
+                        font-size: 30px;  
+                        background: #3b5998;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .single_paragraph{
+            img{
+                max-width: 100%;
+            }
+            p{
+                font: 400 16px/26px $fan;
+                color: $p;
+                padding-bottom: 25px;
+            }
+            .italic_pragraph{ 
+                padding-left: 120px;
+                position: relative;
+                font: 400 italic 20px/30px $fan;
+                padding-top: 15px;
+                padding-bottom: 40px;
+                &:before{
+                    content: "“";
+                    position: absolute;
+                    left:82px;
+                    top: 60px;
+                    font-size: 200px;
+                    color: #e8e8e8;
+                    font-style: italic;
+                    z-index: -1;
+                }
+            } 
+            .tag{
+                margin: 0;
+                padding: 0; 
+                padding-top: 15px;
+                li{
+                    list-style: none; 
+                    padding-right: 7px;
+                    padding-bottom: 10px;
+                    display: inline-block;
+                    a{
+                        font: 400 14px/1 $fan;
+                        color: $p;
+                        text-transform: uppercase;
+                        border: 1px solid $bc;
+                        padding: 12px;
+                        display: block;
+                        &:hover, &:focus, &.active{
+                            background: $h2;
+                            color: #fff;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+/* End Single Content Area */
+
+/* Client Content Area */
+.client_content_area{
+    .media{
+        background: $bc;
+        padding: 40px;
+        .media-left{
+            padding-right: 30px;
+        }
+        .media-body{
+            a{
+                font: 700 24px/1 $qua;
+                color: $h2;
+                display: block;
+                &:hover, &:focus{
+                    color: $p;
+                }
+            }
+            p{
+                font: 400 16px/26px $fan;
+                color: $p;
+                padding-top: 20px;
+            }
+            .social_nav{
+                padding-top: 5px;
+                li{
+                    display: inline-block;
+                    a{
+                        font-size:14px;
+                        color: $p;
+                        padding: 0;
+                        padding-left: 10px;
+                        line-height: 50px;
+                        background-color: transparent;
+                        &:hover, &:focus{
+                            color: $h2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Client Content Area */
+
+/* Single_content_tow Area */
+
+/* End single_content_tow Area */

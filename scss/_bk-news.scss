@@ -1,0 +1,40 @@
+/* Breaking News Area */
+.breaking_news_area{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	.breaking_news{
+		h4{
+			font: 700 14px $qua;
+			text-transform: uppercase;
+			color: $h2;
+			padding-right: 17px;
+			float: left;
+		}
+		.webTicker{
+			margin: 0;
+			padding: 0;    
+			position: relative;
+			top: -3px;
+			display: inline-block;
+			li{  
+				list-style: none;
+				line-height:20px !important;
+                a{
+                    font: 400 16px $fan;
+                    color: $p;  
+                    &:hover, &:focus{
+                        color: $h2;
+                    }
+                }
+			}
+		}
+		
+	}
+}
+/* End Breaking News Area */
+
+/* breaking_news_tow Area */
+.breaking_news_tow{
+    background: $bc; 
+}
+/* End breaking_news_tow Area */

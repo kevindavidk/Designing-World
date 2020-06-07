@@ -1,0 +1,166 @@
+/* travel_left_content_area */
+.travel_left_content_area{
+    padding-top: 70px; /*-----Start new code*-----*/
+	padding-bottom: 55px; /*-----Start new code*-----*/
+	.travel_left_row{ 
+        .travel_images{
+            position: relative;
+            z-index: 2;
+            overflow: hidden;  
+            &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;   
+                background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.9));
+            }
+            img{
+                max-width: 100%;
+                transition: all 0.6s linear;
+            } 
+            .travel_sed_content{
+                position: absolute; 
+                left: 0;
+                right: 0;
+                z-index: 3;
+                bottom: 0; 
+                padding: 40px;
+                padding-bottom: 32px;
+                h5{
+                    font: 16px $fan;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                .tn_tittle{
+                    font: 700 24px/32px $qua;
+                    color: #fff; 
+                    padding-top: 10px;
+                    display: block;
+                }
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    padding-top: 8px;
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        padding-right: 20px;
+                        i{
+                            font-size: 13px;
+                            padding-right: 10px;
+                        }
+                        a{
+                           color: #fff; 
+                        }
+                    }
+                } 
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+		.travel_small_row{
+			margin-left: -15px;
+			.travel_colm{
+				padding-left: 9px;
+				padding-bottom: 9px;
+				float: left;
+			}
+			.travel_small_images{
+				position: relative;
+				z-index: 2;
+				overflow: hidden; 
+				max-width: 283px; 
+				&:after{
+					content: "";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;   
+					background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.9));
+				}
+				img{
+					max-width: 100%;
+                    transition:  all 0.6s linear;
+				} 
+
+				.travel_sed_content{
+					position: absolute; 
+					left: 0;
+					right: 0;
+					z-index: 3;
+					bottom: 0; 
+					padding: 30px;
+					padding-bottom: 25px; 
+					h5{
+						font: 14px $fan;
+						color: #fff;
+						text-transform: uppercase;
+					}
+					.tn_tittle{
+						font: 700 18px/26px $qua;
+						color: #fff; 
+						padding-top: 10px;
+						display: block;
+					}  
+				}
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+			}
+		}
+	}
+}
+/* End travel_left_content_area */
+
+/* travel_left_tow_area */
+.travel_left_tow{
+    padding-top: 10px;
+    padding-bottom: 52px;
+    .travel_left_row{
+        .travel_small_row {
+            .travel_colm{
+                .travel_small_images{
+                    .travel_sed_content{  
+                        ul{
+                            padding: 0;
+                            margin: 0;
+                            padding-top: 8px;
+                            padding-bottom: 10px;
+                            li{
+                                list-style: none;
+                                display: inline-block;
+                                font-size: 12px;
+                                color: #fff;
+                                text-transform: uppercase;
+                                padding-right: 25px;
+                                i{
+                                    font-size: 13px;
+                                    padding-right: 10px;
+                                }
+                                a{
+                                    color: #fff;
+                                }
+                                &:last-child{
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+/* End travel_left_tow_area */
+ 

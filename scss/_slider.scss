@@ -1,0 +1,265 @@
+/* Slider Area */
+.jumboo_slider_area{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 3; 
+    .jumboo_slider{
+        border: 0;
+        margin: 0;  
+        .slides{
+            text-align: center; 
+            li{
+                position: relative; 
+                z-index: 2;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0; 
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    display: block;
+                    background: rgba(10, 19, 29, .5); 
+                    z-index: 1;
+                }
+                img{
+                    max-width: 100%;
+                }
+                .slider_content{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 41%;
+                    transform: translateY(-50%);
+                    z-index: 3;
+                    h5{
+                        font: 400 18px $fan;
+                        color: #fff;
+                        text-transform: uppercase;
+                        padding-bottom: 14px;
+                    }
+                    h2{
+                        font: 700 48px/60px $qua;
+                        color: #fff;
+                        max-width: 850px;
+                        margin: 0 auto;
+                        padding-bottom: 35px;
+                    }
+                    .redmore_btn{
+                        font: 700 16px/60px $qua;
+                        color: $h2;
+                        width: 220px;
+                        background: #fff;
+                        display: block;
+                        margin: 0 auto;
+                        padding-right: 22px;
+                        position: relative;
+                        border: 1px solid transparent;
+                        transition: all 0.6s linear;
+                        i{
+                            position: absolute;
+                            line-height: 60px;  
+                            @include transition;
+                            margin-left: 10px;
+                        }
+                        &:hover, &:focus{
+                            background-color: rgba(10, 19, 29, 0.749); 
+                            color: #fff;
+                            border: 1px solid #fff;
+                            i{
+                                margin-left: 15px;
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .jumboo_carousel{
+        padding: 0 110px;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background: transparent;
+        z-index: 2;
+        .slides{
+            li{
+                background-color: rgba(10, 19, 29, 0.4);
+                text-align: center;
+                cursor: move;
+                @include transition; 
+                .travel_thmb{
+                    padding: 40px 35px; 
+                    h5{
+                        font: 400 14px/1 $fan;
+                        color: #a1a1a1;
+                        text-transform: uppercase;
+                        padding-bottom: 20px;
+                    }
+                    a{
+                        font: 700 18px/26px $qua;
+                        color: #a1a1a1;  
+                    }
+                }
+                &:hover, &:focus{
+                    background-color: rgba(10, 19, 29, 0.749); 
+                    .travel_thmb{
+                        h5{
+                            color: #fff;
+                        }
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .flex-active-slide{
+                background-color: rgba(10, 19, 29, 0.749); 
+                .travel_thmb{
+                    h5, a{
+                        color: #fff;
+                    }
+                } 
+            }
+        }
+    }  
+}  
+
+.flex-direction-nav a{
+    height: 45px;
+}
+/* End Slider Area */
+
+/*==========start new code=======*/
+/* Slider Area tow (Home 4)*/
+.slider_area{
+    .slider_inner, .slider_inner_home{ 
+        .camera_caption{ 
+            height: 100%;
+            div{
+                background: transparent; 
+                top: 50%;
+                transform: translateY(-50%); 
+                position: absolute; 
+                text-shadow: none;
+                left: 0;
+                right: 0;
+                padding-top: 70px;
+                text-align: center;
+                h2{
+                    font: 500 42px $qua;
+                    color: #fff; 
+                    padding-bottom: 30px; 
+                    text-transform: capitalize;
+                }
+                p{
+                    font: 400 18px/34px $fan;
+                    color: #fff;
+                    max-width: 805px;
+                    margin: 0 auto;
+                    padding-bottom: 45px;
+                }
+                .redmore_btn{
+                    font: 700 16px/60px $qua;
+                    color: $h2;
+                    width: 220px;
+                    background: #fff;
+                    display: block;
+                    margin: 0 auto;
+                    padding-right: 22px;
+                    position: relative;
+                    border: 1px solid transparent;
+                    text-transform: uppercase;
+                    i{
+                        position: absolute;
+                        line-height: 60px;  
+                        @include transition;
+                        margin-left: 10px;
+                    }
+                    &:hover, &:focus{
+                        background-color: rgba(10, 19, 29, 0.749); 
+                        color: #fff;
+                        border: 1px solid rgba(255, 255, 255, 1);
+                        i{
+                            margin-left: 15px;
+                        }  
+                    }
+                }
+            }
+        }
+        .camera_overlayer{
+            background: rgba(10, 19, 29, .25); 
+        }
+        .camera_bar_cont{
+            background-color: transparent !important;
+            span{
+                background-color: rgba(10, 19, 29, 0.9) !important;
+                top: 0 !important;
+            }
+        }
+        
+        .camera_fakehover{
+            top: 20px;
+        }
+        .camera_prev, .camera_next{
+            opacity: 1 !important;
+            background-color: transparent;
+            span{
+                display: none;
+            }
+        }
+        .camera_prev{
+            position: relative;
+            &:after{
+                content: "\e875";
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                font-size: 72px;
+                color: #fff;  
+                opacity: .15;
+                display: block;
+                top: -20px; 
+                left: 85px; 
+                @include transition; 
+            } 
+            &:hover, &:focus{
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+        .camera_next{ 
+            &:after{
+                content: "\e876";
+                position: absolute !important;
+                font-family: 'Linearicons-Free';
+                font-size: 72px;
+                color: #fff;  
+                opacity: .15;
+                display: block;
+                top: 0; 
+                right: 85px;  
+                @include transition; 
+            } 
+            &:hover, &:focus{
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* End Slider Area tow (Home 4)*/
+/*==========End new code=======*/
+
+/* Slider_transparent (Home 5)*/ 
+.slider_transparent{
+	.slider_inner_home .camera_caption div{
+		top:55%;
+	}
+} 
+/* End slider_transparent (Home 5)*/ 

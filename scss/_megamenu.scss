@@ -1,0 +1,132 @@
+/* Megamenu */
+.header_aera{ 
+    .navbar-collapse{ 
+        position: relative;
+        .main_navbar{   
+            .mega-menu{ 
+                position: inherit;
+                .megamunu_dropdown{
+                    background: #fff;
+                    box-shadow: 0px 17px 20px 0px rgba(0, 0, 0, 0.27);
+                    position: absolute;
+                    width: 100%;
+                    padding: 40px;
+                    padding-right: 35px;
+                    padding-left: 42px;
+                    border: 0px;
+                    left: 0;
+                    right: 0;
+                    border-radius: 0;  
+                    transition: all .2s ease;
+                    @media (min-width: 992px){ 
+                        display: block;
+                        opacity: 0;
+                        transform: translateY(20px);  
+                        visibility: hidden;
+                    } 
+                    .sub_col{
+                        width: 240px;
+                        padding: 0;
+                        float: left;
+                        margin-top: -10px;
+                        .sub-menu{
+                            li{
+                                display: block;
+                                a{
+                                    font: 400 12px/36px $fan;
+                                    color: $p;
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                    &:hover, &:focus{
+                                        color: $h2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .sub_col_img{
+                        iframe{
+                            border: 0;
+                            width: 329px;
+                            height: 227px;
+                        }
+                    }
+                    .mega_news{
+                        padding-right: 16px;
+                        &.mega_last{
+                            padding-right: 0;
+                        }
+                        .main_news{ 
+                            overflow: hidden;  
+                            width: 260px;  
+                            padding-bottom: 0;
+                            img{
+                                max-width: 100%;
+                                @include transition; 
+                                cursor: pointer;
+                            } 
+                            .tranding_content{
+                                padding-top: 25px; 
+                                background: #fff;
+                                overflow: hidden;
+                                .tn_tittle{
+                                    font: 700 20px/30px $qua;
+                                    color: $h2;
+                                    display: block; 
+                                    text-transform: inherit;
+                                    text-align: left;
+                                }
+                                ul{
+                                    padding: 0;
+                                    margin: 0;
+                                    padding-top: 8px;
+                                    li{
+                                        list-style: none;
+                                        display: inline-block;
+                                        a{
+                                            font-size: 12px;
+                                            color: #999;
+                                            font-family: $qua;
+                                            line-height: 1;
+                                            text-transform: uppercase;
+                                            padding-right: 0px;
+                                            i{
+                                                font-size: 13px;
+                                                padding-right: 10px;
+                                            }
+                                            &:hover, &:focus{
+                                                color: $h2; 
+                                            }
+                                        }
+                                    }
+                                } 
+                            }
+                            &:hover, &:focus{
+                                .tranding_content .tn_tittle{
+                                    color: #7f7f7f;
+                                }
+                                img{
+                                    transform: none;
+                                } 
+                            }   
+                        }
+                        
+                    }
+                }
+                
+                &:hover{
+                    &.mega-menu{
+                        @media (min-width: 992px){
+                            .megamunu_dropdown{ 
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
+/* End Megamenu */  

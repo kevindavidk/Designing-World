@@ -1,0 +1,219 @@
+/* protfolio_area */
+.protfolio_area{
+    position: relative;
+    z-index: 1;
+    padding-top: 45px; /*-----Start new code*-----*/
+    .protfoli_carosel{
+        z-index: 3;
+        .item{
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            cursor: pointer;
+            img{
+                max-width: 100%;
+                text-align: center;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                background-color: rgba(34, 34, 34, .65); 
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                z-index: 1; 
+                @include transition;  
+                opacity: 0;
+            }
+            .item_hover{
+                 margin: 0;
+                padding: 0;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0; 
+                text-align: center;  
+                z-index: 3; 
+                @include transition; 
+                opacity: 0;
+                li{
+                    list-style: none; 
+                    padding-right: 25px; 
+                    display: inline-block; 
+                    a{
+                        font: 400 16px $fan;
+                        color: #fff;
+                        display: inline-block;
+                        i{
+                            padding-right: 10px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+            }
+            &:hover, &:focus{
+                .item_hover{
+                    visibility: visible;
+                    opacity: 1;
+                } 
+                &:before{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        .owl-controls{
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            transform: translateY(-50%); 
+            opacity: 0;
+            @include transition; 
+            z-index: 1;
+            height: 1px;
+            .owl-nav{
+                height: 0;
+            }
+            .owl-prev{
+                display: inline-block; 
+                padding-left: 45px; 
+            }
+            .owl-next{
+                float: right;
+                padding-right: 45px;
+            }
+            i{
+                font-size: 40px;
+                color: #fff;
+            } 
+        }
+        &:hover, &:focus{ 
+            .owl-controls{
+                opacity: 1;
+                height: 1px;
+            }
+        } 
+    }
+} 
+
+/* End protfolio_area */
+
+/* protfolio_area_tow */
+.protfolio_area_tow{
+    padding: 0 120px;
+    padding-top: 43px;
+    .protfoli_carosel_tow{ 
+        z-index: 3;
+        .item{
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            cursor: pointer;
+            img{
+                max-width: 100%;
+                text-align: center;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                background-color: rgba(34, 34, 34, .65); 
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                z-index: 1; 
+                @include transition; 
+                transform: scale(0); 
+                opacity: 0;
+            }
+            .item_hover{
+                 margin: 0;
+                padding: 0;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0; 
+                text-align: center;  
+                z-index: 3; 
+                @include transition; 
+                transform: scale(0); 
+                opacity: 0;
+                li{
+                    list-style: none; 
+                    padding-right: 25px; 
+                    display: inline-block; 
+                    a{
+                        font: 400 16px $fan;
+                        color: #fff;
+                        display: inline-block;
+                        i{
+                            padding-right: 10px;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+            }
+            &:hover, &:focus{
+                .item_hover{
+                    transform: scale(1); 
+                    visibility: visible;
+                    opacity: 1;
+                } 
+                &:before{
+                    transform: scale(1); 
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        
+        .owl-controls{
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            transform: translateY(-50%); 
+            opacity: 0;
+            @include transition; 
+            z-index: 1;
+            height: 1px;
+            .owl-nav{
+                height: 0;
+            }
+            .owl-prev{
+                display: inline-block; 
+                padding-left: 45px; 
+            }
+            .owl-next{
+                float: right;
+                padding-right: 45px;
+            }
+            i{
+                font-size: 40px;
+                color: #fff;
+            } 
+        }
+        &:hover, &:focus{ 
+            .owl-controls{
+                opacity: 1;
+                height: 1px;
+            }
+        }  
+    }
+}
+.protfolio_area.protfolio_six{
+    padding-top: 50px;
+}
+/* End protfolio_area_tow */

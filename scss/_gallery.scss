@@ -1,0 +1,145 @@
+/* gallery_news (Home Theree) */
+.gallery_news{
+    margin: 0;
+    padding: 0;
+    padding-top: 32px; /*----- new code*-----*/
+    padding-bottom: 56px; /*----- new code*-----*/
+    li{
+        list-style: none;
+        display: inline-block;
+        padding-right: 0px;
+        /*----- new code*-----*/
+        a{
+            display: block;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+                @include transition;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+/* End gallery_news */
+
+/* Gallery Filter */
+.filters_row{
+    padding-top: 67px;
+    padding-bottom: 46px;
+    .projects_filters{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            display: inline-block;
+            font: 400 14px $fan;
+            color: $p;
+            text-transform: uppercase;
+            padding-right: 35px;
+            cursor: pointer;
+            @include transition; 
+            text-align: center;
+            &:hover, &:focus, &.active{
+                color: $h2;
+            }
+        }
+    }
+}
+/* End Gallery Filter */
+
+/* Photo Gallery Area */
+.photo_gallery_area{
+    #portfolios{
+        .portfolio{
+            padding-bottom: 30px;
+            .inner{
+                position: relative;
+                overflow: hidden;
+                img{
+                    max-width: 100%;
+                    transition: all 0.5s ease-in-out; /*------new code------*/
+                } 
+                // text_row
+                .text_row{
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.851);
+                    text-align: center;
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: all 100ms linear 0s;
+                    &:before{
+                        content: "";
+                        height: 1px;
+                        background: #FFF;
+                        width: 50px;
+                        margin: 0 auto;
+                        position: absolute;
+                        top: 50%; 
+                        right: 0;
+                        left: -50%;
+                        display: block;
+                        @include transition;
+                    } 
+                    &:after{
+                        content: "";
+                        height: 50px;
+                        background: #FFF;
+                        width: 1px;
+                        margin: 0 auto;
+                        position: absolute;
+                        top:0%; 
+                        transform: translateY(-50%);
+                        right: 0;
+                        left: 0;
+                        display: block;
+                        @include transition;
+                    } 
+                    h4{
+                        font: 400 14px $qua;
+                        color: #fff;
+                        text-transform: uppercase;
+                        position: absolute;
+                        bottom: -10%;
+                        left: 0;
+                        right: 0;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+                
+                &:hover, &:focus{
+                    img{
+                        transform: scale(1.1); /*------new code------*/
+                    }
+                    .text_row{
+                        opacity: 1;
+                        &:before{
+                            left: 0;
+                        }
+                        &:after{
+                            top: 50%;
+                        }
+                        h4{
+                            bottom: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .next_prev{
+        padding-top: 30px;
+        padding-bottom: 70px
+    }
+}
+/* End Photo Gallery Area */ 
+

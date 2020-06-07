@@ -1,0 +1,93 @@
+/* Archive Area */
+.header_archive{
+    border-bottom: 1px solid #e0e0e0;
+}
+.recent_news_tow_area.archive_area{
+    padding-top: 63px;
+    padding-bottom: 24px;
+    .recent_news_tow_row{
+        .archive_area{
+            padding-right: 25px;
+            .para_tittle{
+                font: 400 16px/26px $fan;
+                color: $p;
+                padding-top: 25px;
+                padding-bottom: 40px;
+            }
+            .archive_panel_area{
+                .panel-default{
+                    border: 0;
+                    box-shadow: none;
+                    outline: none;
+                    padding-bottom: 25px;
+                    .panel-heading{
+                        background: #fff;
+                        border: 0;
+                        border-bottom: 1px solid #b2b2b2;
+                        border-radius: 0;
+                        padding: 0; 
+                        a{
+                            font: 700 16px/55px $qua;
+                            color: $h2;
+                            position: relative;
+                            display: block;
+                            &:after{
+                                content: "\f106";
+                                position: absolute;
+                                right: 0;
+                                top: 20px;
+                                color: $h2;
+                                font: normal normal normal 16px/1 FontAwesome;
+                            }
+                            &.collapsed{
+                                &:after{
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        } 
+                    }
+                    .panel-collapse{
+                        .archive_panel_2{
+                            padding-left: 30px; 
+                            .panel-default{
+                                padding-top: 20px;
+                                padding-bottom: 0;
+                            }
+                            .panel-heading{ 
+                                border-bottom: 1px solid #e0e0e0; 
+                                a{
+                                    font: 700 16px/55px $qua;
+                                    color: $p;
+                                    position: relative;
+                                    display: block;
+                                    &:after{
+                                        color: $p;
+                                    } 
+                                } 
+                            }
+                            .panel-collapse{
+                                .panel-body{
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-bottom: -10px;
+                                    padding-left: 30px;
+                                    border: 0;
+                                    padding-top: 20px;
+                                    li{
+                                        a{
+                                            font: 700 16px/30px $qua;
+                                            display: block;
+                                            color: $h2;
+                                        }
+                                        list-style: none; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Archive Area */

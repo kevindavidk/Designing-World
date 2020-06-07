@@ -1,0 +1,164 @@
+/* flicker_photos */
+.flicker_photos{
+    padding: 0;
+    padding-top:37px;
+    li{
+        list-style: none; 
+        padding: 0px 1px 2px;
+        float: left;
+        width: calc(100% / 2);
+        a{ 
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+.twitter_caros{
+    padding-top: 58px;
+    .twitter_items{
+        padding-top: 30px;
+        .items{
+            a{
+                font: 400 italic 18px/28px $fan;
+                text-align: center;
+                color: $p;
+                display: block;
+                i{
+                    display: block;
+                    font-size: 30px;
+                    color: $h2;
+                    padding-bottom:15px;
+                }
+                span{
+                    font-size: 16px;
+                    font-style: normal; 
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    display: block;
+                    padding-top: 5px;
+                }
+            }
+            h5{
+                font: 400 16px $fan;
+                color: #999;
+                text-align: center;
+                display: block;
+            }
+        } 
+        .owl-controls{
+            padding-top: 30px; 
+            .owl-dots{
+                text-align: center;
+                .owl-dot{
+                    height: 10px;
+                    width: 10px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    background: #afafaf;
+                    @include transition; 
+                    display: inline-block;
+                    &:hover, &:focus, &.active{
+                        background: $h2;
+                    }
+                }
+            }
+        }
+    }
+}
+.center_tag{
+    padding-top: 40px !important;
+    .tag{
+        padding-top: 35px !important;
+        text-align: center;
+    }
+}
+.about_me{
+    padding-top: 54px;
+    text-align: center;
+    img{
+        margin-top: 30px;
+        max-width: 100%;
+    }
+    p{
+        font: 400 16px/26px $fan;
+        color: $p;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .read_more{
+        font: 700 14px $qua;
+        color: $h2;
+        position: relative;
+        i{ 
+            position: absolute;
+            right: -25px;
+            top: 1px;
+            @include transition;
+        }
+        &:hover, &:focus{
+            i{
+                right: -30px;
+            }
+        }
+    }
+}
+.popular_news_single{
+    padding-top: 60px;
+    .tittle_middle{
+        margin-bottom: 43px;
+    }
+    .small_news{
+        text-align:left;
+        display: inline-block;
+        max-width: 124px;
+        margin-right: 9px;
+        cursor: pointer;
+        padding-bottom: 22px;
+        img{
+            max-width: 100%;
+        }
+        a{
+            font: 700 14px/22px $qua;
+            color: $h2;
+            display: block;
+            padding-top: 15px;
+            &:hover, &:focus{
+                color:#7f7f7f; 
+            }
+        }
+        .date_hour{
+            font-size: 12px;
+            color: #999;
+            padding-top: 5px;
+            text-transform: uppercase;
+            cursor: default;
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+    .smr{
+        margin: 0;
+    }
+}
+/* End flicker_photos */
+
+/* Recent_news_six */
+.recent_news_six{
+    .social_center{
+        padding-top: 0 !important;
+        .social_detils{
+            li{
+                display: block;
+                a{
+                    width: 100% !important;
+                    float: none !important;
+                }
+            }
+        } 
+    }
+}
+/* End recent_news_six */

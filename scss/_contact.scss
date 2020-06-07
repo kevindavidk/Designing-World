@@ -1,0 +1,135 @@
+/* drop_line_area */
+.drop_line_area{
+    border-top: 1px solid #e0e0e0;
+    padding: 62px 0px 70px;
+    .drop_line_row{
+       .tittle{
+           p{
+               font: 400 15px/26px $fan;
+               color: $p;
+               text-align: center;
+               max-width: 750px;
+               margin: 0 auto;
+               padding-top: 25px;
+           }
+        }
+        .contact_from{
+            padding-top: 65px;
+            .input_box{ 
+                border: 1px solid #e0e0e0;
+                border-radius: 0;
+                box-shadow: none;
+                outline: none;
+                background-color: transparent;
+                height: auto; 
+                display: block;
+                padding: 0; 
+                color: $p;
+                width: 100%;
+                font: 400 16px/60px $fan;  
+                background: #fff;
+                padding-left: 30px;
+                margin-bottom: 30px;
+                @include placeholder{
+                    color: #999999;
+                }
+            }
+            textarea{
+                height: 225px !important;
+                resize: none; 
+                margin-bottom: 40px !important;
+            }
+            button{
+                display: block;
+                font: 700 16px/60px $qua;
+                color: #fff;
+                background: $h2;
+                margin: 0 auto;
+                padding: 0;
+                text-transform: uppercase;
+                border-radius: 0;
+                text-align: center;
+                width: 220px;
+                border: 0; 
+                &:hover, &:focus{
+                    background: $p;
+                }
+            }
+        }
+    }
+}
+/* End drop_line_area */
+
+/* drop_line_tow */
+.drop_line_tow{
+    .drop_line_row{
+        .tittle{
+            padding-bottom: 65px;
+        }
+        .dorp_messages{ 
+            margin-right: -15px; 
+            .contact_from{
+                background: $bc;
+                padding: 40px;
+                .input_box{
+                    width: 320px;
+                    display: inline-block;
+                    margin-right:26px;
+                    &:nth-child(2), &:nth-child(4){
+                        margin-right: 0 !important;
+                    }
+                }
+                textarea{
+                    width: 100% !important;
+                    margin-bottom: 26px !important;
+                }
+            }
+        }
+        
+        .contact_map{
+            iframe{
+                width: 100%;
+                height: 575px;
+                border: 0;
+            }
+        }
+    }
+    .contact_info{ 
+        padding-top: 55px;
+       .tittle{
+           padding-bottom: 60px;
+           p{
+               font: 400 15px/26px $fan;
+               color: $p;
+               text-align: center;
+               max-width: 750px;
+               margin: 0 auto;
+               padding-top: 25px;
+           }
+        }
+        .contact{
+            margin: 0;
+            padding: 0; 
+            text-align: center;
+            display: inline-block;
+            padding-left: 140px;
+            h4{
+                font: 700 18px $fan;
+                color: $h2;
+                padding-bottom: 5px;
+            }
+            li{
+                list-style: none;
+                display: block;
+                a{
+                    font: 18px/36px $fan;
+                    color: $p;
+                }
+            }
+        }
+        .address{
+            padding-left: 190px;
+        }
+    }
+}
+/* End drop_line_tow */

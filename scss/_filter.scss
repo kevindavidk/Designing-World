@@ -1,0 +1,70 @@
+.filter_by_area{
+    .filter_row{
+        padding: 40px 0;
+        border-bottom: 1px solid #e0e0e0;
+        h2{
+            font: 400 14px/40px $qua;
+            color: $h2;
+            text-transform: uppercase;
+            float: left;
+            padding-right: 10px;
+        }
+        .filter_seclect{ 
+            padding-left: 20px;
+            display: inline-block;
+            .bootstrap-select{
+                button{
+                    font: 400 14px/40px $fan; 
+                    padding: 0 20px;
+                    border-radius: 0;
+                    border: 1px solid #e0e0e0;
+                    background-color: transparent;
+                    box-shadow: none;
+                    color: $p;
+                    outline: none !important;
+                    position: relative;
+                    .bs-caret{ 
+//                        position: relative;
+                        &:after{
+                            content: "\e874";
+                            font-family: 'Linearicons-Free';
+                            right: 20px;
+                            position: absolute;
+                            font-size: 14px;
+                            color: $p;
+                            @include transition; 
+                        }
+
+                        .caret{
+                            display: none;
+                        }
+                    } 
+                }
+                .dropdown-menu{ 
+                    box-shadow: 0;
+                    border: 0;
+                    margin: 0;
+                    ul{
+                        li{
+                            a{
+                                font: 400 16px/30px $fan; 
+                                color: $p;
+                            }
+                        }
+                    }
+                }
+            }
+            .bootstrap-select.open{
+                button{
+                    &:focus{ 
+                        .bs-caret{
+                            &:after{
+                                transform: rotate(180deg);
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

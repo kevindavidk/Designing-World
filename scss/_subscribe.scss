@@ -1,0 +1,90 @@
+/* subscribe_to_area */
+.subscribe_to_area{ 
+    padding-top: 95px;
+    .subscribe_row{
+        padding-bottom: 100px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .subscribe_paragraph{
+        font: 400 15px/26px $fan;
+        color: #4f4f4f;
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 62px;
+    }
+    .search_from{
+        text-align: center;
+        input{
+            font: 400 16px/58px $fan;
+            border: 1px solid $bc;
+            border-radius: 0;
+            box-shadow: none;
+            display: inline-block;
+            padding: 0;
+            height: auto;
+            padding-left: 30px;
+            max-width: 450px;
+            color: #7f7f7f;
+            @include placeholder{
+                color: #7f7f7f;
+            }
+        }
+        button{
+            font: 400 16px/60px $fan;
+            color: #fff;
+            background: $h2;
+            text-align: center;
+            letter-spacing: .5px;
+            border: 0;
+            box-shadow: none;
+            padding: 0;
+            width: 180px;
+            text-transform: uppercase;
+            border-radius: 0;
+            margin-left: -4px;
+            margin-top: -1px;
+            &:hover, &:focus{
+                 
+            }
+        }
+    }
+}
+.subscribe_tow_area{
+    .subscribe_row{
+        border-bottom: 0;
+    }
+}
+/* End subscribe_to_area */
+
+/* subscribe_black */
+.subscribe_black{
+    background: #2a2a2a; 
+    .subscribe_row{
+        border: 0;
+        .tittle h2{
+            color: #fff;
+        }
+        .subscribe_paragraph{
+            color: #fff;
+            opacity: .5;
+        }
+        .search_from{
+            input{
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid $p;
+                @include placeholder{
+                    color: #fff;
+                    opacity: .30;
+                }
+            }
+            button{
+                color: $h2;
+                background: #fff;
+            }
+        } 
+    }
+}
+/* End subscribe_black */
